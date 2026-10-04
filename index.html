@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#100711">
+  <meta name="description" content="Uma surpresa romântica feita especialmente para nós dois. ❤️">
+  <title>Nosso Cantinho ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="aurora"></div>
+  <div id="hearts" aria-hidden="true"></div>
+  <div id="toast" class="toast" role="status"></div>
+
+  <main class="app">
+    <section id="home" class="screen active">
+      <div class="glass hero">
+        <div class="mini-badge">PARA O MEU AMOR ♡</div>
+        <div class="heart-logo">♥</div>
+        <p class="eyebrow">UMA SURPRESA FEITA COM CARINHO</p>
+        <h1 id="homeTitle">Nosso Cantinho</h1>
+        <p id="homeSubtitle">Prepare-se para lembrar de alguns dos nossos momentos favoritos.</p>
+
+        <div class="photo-frame cover-frame">
+          <img id="homePhoto" src="vcapa.jpg" alt="Foto especial do casal">
+          <span>♥</span>
+        </div>
+
+        <div class="home-actions">
+          <button class="primary-btn" id="startBtn">Começar nossa história <span>→</span></button>
+          <button class="secondary-btn" id="letterBtn">Abrir uma cartinha 💌</button>
+        </div>
+
+        <div class="love-meter">
+          <div><span>amor desbloqueado</span><strong>∞%</strong></div>
+          <div class="meter"><i></i></div>
+        </div>
+        <p class="tiny">Funciona no celular e pode ser publicado no GitHub Pages ✨</p>
+      </div>
+    </section>
+
+    <section id="quiz" class="screen">
+      <div class="quiz-wrap">
+        <header class="topbar">
+          <button class="icon-btn" id="backBtn" aria-label="Voltar">←</button>
+          <div class="progress"><div id="progressBar"></div></div>
+          <span id="counter">1/9</span>
+        </header>
+
+        <div class="glass quiz-card">
+          <div class="question-head">
+            <div class="question-tag">PERGUNTA <span id="questionNumber">1</span></div>
+            <button class="tip-btn" id="tipBtn" type="button">💡 Dica</button>
+          </div>
+          <h2 id="question"></h2>
+          <p id="questionHint" class="hint"></p>
+
+          <div id="options" class="options"></div>
+          <div id="feedback" class="feedback" role="status"></div>
+
+          <button class="next-btn" id="nextBtn" hidden>Próxima <span>→</span></button>
+        </div>
+
+        <div class="memory-row">
+          <div class="memory-photo">
+            <img id="quizPhoto" src="wfoto1.jpg" alt="Lembrança do casal">
+            <button class="like-btn" id="likeBtn" type="button" aria-label="Curtir esta lembrança">♡ <span id="likeCount">0</span></button>
+          </div>
+          <button class="cute-btn" id="messageBtn" type="button">💌 Uma mensagem para você</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="final" class="screen">
+      <div class="glass final-card">
+        <div class="celebration">💜</div>
+        <p class="eyebrow">VOCÊ CHEGOU ATÉ O FIM</p>
+        <h1 id="finalTitle">Eu escolheria você de novo.</h1>
+        <p id="finalText"></p>
+        <div class="photo-frame final-photo">
+          <img id="finalPhoto" src="zfinal.jpg" alt="Foto especial do casal">
+          <span>♥</span>
+        </div>
+        <p class="signature" id="signature">Com amor, seu amor. ❤️</p>
+        <div class="final-actions">
+          <button class="primary-btn" id="galleryBtn">Ver nossas lembranças 📸</button>
+          <button class="secondary-btn" id="restartBtn">Refazer o quiz ↻</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-card glass">
+      <button class="modal-close" data-close="true" aria-label="Fechar">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
